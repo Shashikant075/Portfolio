@@ -1,0 +1,495 @@
+/* Existing CSS */
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.portfolio-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #F0F4F7;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* Keeps the sidebar fixed */
+    left: 20px; /* Moves it 20px from the left */
+    top: 0; /* Aligns it to the top */
+    height: 100%; /* Sidebar will stretch full height */
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000; /* Ensures sidebar stays above content */
+}
+
+.profile-pic {
+    width: 148px;
+    height: 180px;
+    border-radius: 57%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 22px;
+    color: #0071c5;
+}
+
+.role {
+    font-size: 18px;
+    color: #5b5b5b;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.resume-btn {
+    background-color: #0071c5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    margin-left: 270px; /* Adds margin to prevent overlap with sidebar */
+}
+
+.greeting {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.projects-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background-color: #E3F2FD;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.about-me h2, .projects-summary h2, .experience-container h2, .certificates h2, #contact h2 {
+    font-size: 24px;
+    color: #0071c5;
+    margin-bottom: 15px;
+}
+
+.about-me p, .experience-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-me p {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #0071c5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #0071c5;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.8rem;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.experience-container {
+    margin-top: 40px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    background-color: #E3F2FD;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.certificates img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #0071c5;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Let's Connect Section */
+#contact {
+    margin-bottom: 50px;
+}
+
+#contact h2 {
+    font-size: 24px;
+    color: #0071c5;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-box {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.contact-box a, .contact-box p {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-box p {
+    margin: 0;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #0071c5;
+}
+
+.right-sidebar {
+    flex: 0 0 50px; /* Sidebar width */
+    background-color: #f0f0f0; /* Background color */
+    padding: 20px 10px; /* Padding inside the sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* Fixes the sidebar */
+    top: 0;
+    right: 0; /* Aligns it to the right */
+    height: 100%; /* Full height of the page */
+}
+
+.nav-item {
+    margin-bottom: 20px; /* Space between navigation items */
+    font-size: 24px; /* Icon size */
+    color: #666666; /* Icon color */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center the content */
+}
+
+.nav-item a {
+    color: #6c63ff; /* Icon color */
+    font-size: 24px; /* Adjust icon size */
+    display: block;
+    margin-bottom: 10px; /* Space between items */
+    text-decoration: none; /* No underline on links */
+}
+
+.nav-item a:hover {
+    color: #4e3db3; /* Darker hover effect */
+}
+
+/* --- Awards & Certificates Section --- */
+
+#awards {
+    padding: 40px 0;
+    background: #fff;
+}
+
+#awards h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.awards-certificates {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.award-item {
+    text-align: center;
+    width: 250px;
+}
+
+.award-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.award-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.award-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* --- Modal Styles --- */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#caption {
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+
+/* Responsive Adjustments for Mobile */
+
+/* Adjusting layout for smaller screens */
+@media only screen and (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none; /* Removing shadow to simplify on mobile */
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .projects-summary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .certificates {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Further adjustments for extra-small screens */
+@media only screen and (max-width: 480px) {
+    .name {
+        font-size: 18px;
+    }
+
+    .role {
+        font-size: 16px;
+    }
+
+    .resume-btn, .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .project-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #contact h2 {
+        font-size: 20px;
+    }
+
+    .contact-box {
+        font-size: 14px;
+    }
+
+    /* Reducing padding for a tighter layout */
+    .sidebar, .main-content, .footer {
+        padding: 10px;
+    }
+}
